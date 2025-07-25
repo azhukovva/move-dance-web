@@ -37,13 +37,15 @@
   transition: all 0.6s ease;
 }
 
-.overlay:hover {
-  background: transparent;
+@media (min-width: 481px) {
+  .overlay:hover {
+    background: transparent;
+  }
 }
 
 .cardTitle {
   /* font-family: var(--font-fira); */
-  font-size: clamp(1rem, 2vw, 2.5rem); /* auto scales between 1rem and 2rem */
+  font-size: clamp(1rem, 1.6vw, 2.2rem); /* auto scales between 1rem and 2rem */
   text-align: center;
   padding: 0 2vw;
   text-transform: uppercase;
@@ -55,5 +57,9 @@
 @media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card:hover {
+    transform: none;
   }
 }

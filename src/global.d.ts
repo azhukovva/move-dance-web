@@ -13,7 +13,7 @@ declare module "*.JPG" {
   export default value;
 }
 
-declare module "*.MP4" {
+declare module "*.mp4" {
   const src: string;
   export default src;
 }

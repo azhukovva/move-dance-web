@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./StyleModal.module.css";
 import { Style } from "../../data";
 import { Icon } from "@iconify/react";
-import instagramIcon from '@iconify-icons/mdi/instagram';
+import instagramIcon from "@iconify-icons/mdi/instagram";
 
 interface ModalProps {
   style: Style;
@@ -42,9 +42,14 @@ const StyleModal = ({ style, onClose }: ModalProps) => {
 
         <div className={classes.content}>
           <div className={classes.detailHeader}>
-            <span className={classes.more} onClick={onClose}>
-              More in our Insta <Icon icon={instagramIcon}/>
-            </span>
+            <a
+              className={classes.moreMobile}
+              href="https://www.instagram.com/move_dance_brno/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              More in our Insta <Icon icon={instagramIcon} />
+            </a>
             <button className={classes.mobileCloseBtn} onClick={onClose}>
               ×
             </button>
@@ -79,8 +84,16 @@ const StyleModal = ({ style, onClose }: ModalProps) => {
                 icon="🎒"
               />
             </div>
-            <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
               <button className={classes.btn}>Make a reservation</button>
+              <a
+                className={classes.more}
+                href="https://www.instagram.com/move_dance_brno/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                More in our Instagram <Icon icon={instagramIcon} />
+              </a>
             </div>
           </div>
         </div>

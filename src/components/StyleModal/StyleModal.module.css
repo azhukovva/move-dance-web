@@ -145,6 +145,27 @@
   background-color: #db4e28;
 }
 
+.more {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  border-radius: 3rem;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.more:hover {
+  background-color: #c7d9e5b5;
+  color: black;
+  border: 1px solid transparent;
+}
+
 .mobileCloseBtn {
   display: none;
 }
@@ -190,24 +211,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-        margin-bottom: 0;
+    margin-bottom: 0;
   }
-  .more {
+  .moreMobile {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
     justify-content: center;
-      padding: .7rem 2rem;
-  border-radius: 3rem;
-  background-color: #c7d9e5b5;
-  color: black;
-   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  }
-
-  .more:hover{
+    padding: 0.7rem 2rem;
+    border-radius: 3rem;
     color: white;
     background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .moreMobile:hover {
+    background-color: #c7d9e5b5;
+    color: black;
+  }
+
+  .more {
+    display: none;
   }
 
   .mobileCloseBtn {
@@ -219,6 +245,7 @@
     cursor: pointer;
     align-items: center;
     justify-content: right;
+    color: black;
   }
 
   .title {

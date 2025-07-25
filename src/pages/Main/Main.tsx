@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classes from "./Main.module.css";
-
-import main from "../../assets/images/main.jpg";
-import main3 from "../../assets/images/main3.jpg";
-import mobileVideo from "../../assets/videos/video.MP4";
-import { items } from "../HotNow/HotNow";
+import mobileVideo from "../../assets/videos/video.mp4";
 
 const Main = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,6 +12,17 @@ const Main = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch((err) => {
+        console.warn("Autoplay prevented:", err);
+      });
+    }
+  }, []);
+
   return (
     <div
       style={{
@@ -24,14 +31,8 @@ const Main = () => {
       }}
       className={classes.container}
     >
-      {/* {!isMobile ? (
-        <video className={classes.bgMedia} autoPlay loop muted playsInline>
-          <source src={mobileVideo} type="video/mp4" />
-        </video>
-      ) : (
-        <img src={main3} alt="" className={classes.bgMedia} />
-      )} */}
       <video
+      ref={videoRef}
         style={{ height: !isMobile ? "130vh" : "100vh" }}
         className={classes.bgMedia}
         autoPlay
