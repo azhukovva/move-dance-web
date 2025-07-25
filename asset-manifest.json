@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/move-dance-web/static/css/main.35f7469e.css",
-    "main.js": "/move-dance-web/static/js/main.e6903399.js",
-    "static/media/video.MP4": "/move-dance-web/static/media/video.b343c6ba50fdca2de25e.MP4",
+    "main.css": "/move-dance-web/static/css/main.99ec5284.css",
+    "main.js": "/move-dance-web/static/js/main.39c6922f.js",
+    "static/media/video.mp4": "/move-dance-web/static/media/video.b343c6ba50fdca2de25e.mp4",
     "static/media/jazz_funk.jpg": "/move-dance-web/static/media/jazz_funk.e1988a1c5891abebe25c.jpg",
     "static/media/mobility.jpg": "/move-dance-web/static/media/mobility.d48c6db4e91fb6a4b48b.jpg",
     "static/media/frame.jpg": "/move-dance-web/static/media/frame.35c0be9652ba21066024.jpg",
@@ -12,11 +12,11 @@
     "static/media/girly_hh.jpg": "/move-dance-web/static/media/girly_hh.608865f79bf91e01797c.jpg",
     "static/media/choreo.jpg": "/move-dance-web/static/media/choreo.c619f573a2fe1b56d5d2.jpg",
     "index.html": "/move-dance-web/index.html",
-    "main.35f7469e.css.map": "/move-dance-web/static/css/main.35f7469e.css.map",
-    "main.e6903399.js.map": "/move-dance-web/static/js/main.e6903399.js.map"
+    "main.99ec5284.css.map": "/move-dance-web/static/css/main.99ec5284.css.map",
+    "main.39c6922f.js.map": "/move-dance-web/static/js/main.39c6922f.js.map"
   },
   "entrypoints": [
-    "static/css/main.35f7469e.css",
-    "static/js/main.e6903399.js"
+    "static/css/main.99ec5284.css",
+    "static/js/main.39c6922f.js"
   ]
 }
