@@ -32,14 +32,18 @@ const Main = () => {
       className={classes.container}
     >
       <video
-      ref={videoRef}
+        playsInline
+        muted
+        autoPlay
+        ref={videoRef}
         style={{ height: !isMobile ? "130vh" : "100vh" }}
         className={classes.bgMedia}
-        autoPlay
         loop
-        muted
-        playsInline
       >
+        <source
+          src={`${process.env.PUBLIC_URL}/videos/video.webm`}
+          type="video/webm"
+        />
         <source src={mobileVideo} type="video/mp4" />
       </video>
       <div
