@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/move-dance-web/static/css/main.99ec5284.css",
-    "main.js": "/move-dance-web/static/js/main.39c6922f.js",
+    "main.js": "/move-dance-web/static/js/main.4c7c7b72.js",
     "static/media/video.mp4": "/move-dance-web/static/media/video.b343c6ba50fdca2de25e.mp4",
     "static/media/jazz_funk.jpg": "/move-dance-web/static/media/jazz_funk.e1988a1c5891abebe25c.jpg",
     "static/media/mobility.jpg": "/move-dance-web/static/media/mobility.d48c6db4e91fb6a4b48b.jpg",
@@ -13,10 +13,10 @@
     "static/media/choreo.jpg": "/move-dance-web/static/media/choreo.c619f573a2fe1b56d5d2.jpg",
     "index.html": "/move-dance-web/index.html",
     "main.99ec5284.css.map": "/move-dance-web/static/css/main.99ec5284.css.map",
-    "main.39c6922f.js.map": "/move-dance-web/static/js/main.39c6922f.js.map"
+    "main.4c7c7b72.js.map": "/move-dance-web/static/js/main.4c7c7b72.js.map"
   },
   "entrypoints": [
     "static/css/main.99ec5284.css",
-    "static/js/main.39c6922f.js"
+    "static/js/main.4c7c7b72.js"
   ]
 }
