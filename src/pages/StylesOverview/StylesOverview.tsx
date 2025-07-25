@@ -1,21 +1,22 @@
-import React from "react";
-import classes from "./StylesOverview.module.css"
+import React, { useState } from "react";
+import classes from "./StylesOverview.module.css";
 import { Style } from "../../data";
+import { styles } from "../../data";
+import StyleModal from "../../components/StyleModal/StyleModal";
 
-const Card = (props: Style) => {
-  const onCardClick = () => {};
+type CardProps = Style & { onClick: () => void };
+
+const Card = (props: CardProps) => {
   return (
-    //with colorful bg
     <div>
- 
       <div
+        className={classes.card}
         id={`${props.name}-card`}
-        className="item-card"
         style={{ backgroundImage: `url(${props.image})` }}
-        onClick={onCardClick}
+        onClick={props.onClick}
       >
-        <div className="overlay">
-          <span className="card-title">{props.name}</span>
+        <div className={classes.overlay}>
+          <span className={classes.cardTitle}>{props.name}</span>
         </div>
       </div>
     </div>
@@ -23,7 +24,37 @@ const Card = (props: Style) => {
 };
 
 const StylesOverview = () => {
-  return <div className={classes.item_grid}></div>;
+  const [selectedStyle, setSelectedStyle] = useState<Style | null>(null);
+
+  const handleCardClick = (style: Style) => {
+    setSelectedStyle(style);
+  };
+
+  const closeModal = () => {
+    setSelectedStyle(null);
+  };
+  return (
+    <>
+      <div className={classes.grid}>
+        {" "}
+        {styles.map((style) => (
+          <Card
+            key={style.name}
+            name={style.name}
+            about={style.about}
+            for={style.for}
+            whatToBring={style.whatToBring}
+            image={style.image}
+            onClick={() => handleCardClick(style)}
+          />
+        ))}
+      </div>
+
+      {selectedStyle && (
+        <StyleModal style={selectedStyle} onClose={closeModal} />
+      )}
+    </>
+  );
 };
 
 export default StylesOverview;

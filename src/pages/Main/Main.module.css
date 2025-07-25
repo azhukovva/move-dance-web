@@ -1,0 +1,148 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bgMedia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 2;
+  pointer-events: none;
+  padding: 8vh 5vw;
+}
+
+.titleContainer {
+  gap: 1rem;
+  bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  line-height: 1;
+  gap: 0.5vh;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.75;
+  font-family: var(--font-fira);
+}
+.title {
+  font-family: var(--font-fira);
+  font-size: 15vw;
+  font-weight: bold;
+  color: #fff;
+}
+.slogan {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 4;
+}
+
+@media (max-width: 768px) {
+  .titleContainer {
+    gap: 0.5vh;
+  }
+  .title {
+    font-size: 20vw;
+  }
+  .subtitle {
+    font-size: 5vw;
+  }
+  .slogan {
+    font-size: 1.2rem;
+    left: 5vw;
+    bottom: 8vh;
+  }
+}
+
+/* Cards */
+.section {
+  z-index: 3;
+  padding: 2vh 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  font-family: var(--font-fira);
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 2vh 2vw;
+  border-radius: 1rem;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.iconCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.cardText {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  /* background: rgba(0,0,0,0.3); */
+  color: #fff;
+  z-index: 100;
+  padding: 0 3vw;
+  /* backdrop-filter: blur(4px); */
+}
+
+.address {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: opacity 0.2s;
+  opacity: 0.75;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+  opacity: 1;
+  /* text-decoration: underline; */
+}
+
+.mobileTitle {
+  position: absolute;
+  padding: 5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}

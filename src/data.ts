@@ -1,3 +1,12 @@
+import choreo from "./assets/images/choreo.jpg";
+import contemp from "./assets/images/contemp.jpg";
+import girly_hh from "./assets/images/girly_hh.jpg";
+import heels from "./assets/images/heels.jpg";
+import jazz_funk from "./assets/images/jazz_funk.jpg";
+import frame from "./assets/images/frame.jpg";
+import mobility from "./assets/images/mobility.jpg";
+import morning_flow from "./assets/images/morning_flow.jpg";
+
 export type Style = {
   name: string;
   about: string;
@@ -14,7 +23,7 @@ export const styles: Style[] = [
     for: "For girls who want to dance brightly, freely, and confidently, regardless of their level.",
     whatToBring:
       "Comfortable sneakers, loose pants or whatever allows easy movement, top/t-shirt, oversized hoodie optional.",
-    image: "",
+    image: girly_hh,
   },
   {
     name: "Frame Up Strip",
@@ -22,7 +31,7 @@ export const styles: Style[] = [
       "Feminine, flexible style with an emphasis on sensuality and confident command of the body.",
     for: "For girls who want to liberate themselves, emphasize their femininity, and learn to move confidently.",
     whatToBring: "Shoes or socks, comfortable clothing, knee pads are a must.",
-    image: "",
+    image: frame,
   },
   {
     name: "Mobility & Stretching",
@@ -30,7 +39,7 @@ export const styles: Style[] = [
       "Activities for developing flexibility, joint mobility, and relieving tension. Gentle work on the whole body.",
     for: "For all levels, especially if you want to improve well-being, posture, mobility, and flexibility.",
     whatToBring: "Sports uniform, socks.",
-    image: "",
+    image: mobility,
   },
   {
     name: "Jazz Funk",
@@ -38,7 +47,7 @@ export const styles: Style[] = [
       "Explosive mix of movements. A bright, eye-catching style like in the clips of popular artists.",
     for: "Suitable for those who want to dance freely, brightly, and with enthusiasm.",
     whatToBring: "Sneakers, loose pants, a top or a t-shirt.",
-    image: "",
+    image: jazz_funk,
   },
   {
     name: "Choreo",
@@ -46,7 +55,7 @@ export const styles: Style[] = [
       "A direction that goes beyond style. In the classes, we guarantee the development of musicality, working with rhythm and freedom of movement.",
     for: "For everyone who wants to dance confidently and quickly learn new movements.",
     whatToBring: "Comfortable sneakers, sports pants, top/t-shirt",
-    image: "",
+    image: choreo,
   },
   {
     name: "Contemporary",
@@ -54,7 +63,7 @@ export const styles: Style[] = [
       "A pliable and emotional style that combines dance, freedom of movement and emotions, and work with space.",
     for: "For those who want to develop flexibility, expressiveness, and work with emotions through dance.",
     whatToBring: "Socks, comfortable, non-restrictive clothing",
-    image: "",
+    image: contemp,
   },
   {
     name: "High Heels",
@@ -63,7 +72,7 @@ export const styles: Style[] = [
     for: "For girls who want to feel confident and move beautifully in heels.",
     whatToBring:
       "Stable heels (preferably closed, with a strap), something comfortable for dancing and knee pads.",
-    image: "",
+    image: heels,
   },
   {
     name: "Morning Flow",
@@ -71,6 +80,6 @@ export const styles: Style[] = [
       "Gentle morning practices to awaken the body, relieve tension, and energize for the whole day.",
     for: "For any level of training, to start the day in a good rhythm.",
     whatToBring: "Comfortable clothes, socks",
-    image: "",
+    image: morning_flow,
   },
 ];
