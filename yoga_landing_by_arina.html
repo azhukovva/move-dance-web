@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Studio by Arina</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fffdf7;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1594737625785-cb2a82cfc66d?fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .features, .schedule, .testimonials, .contact {
+      margin-top: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #4b6043;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      background: #f6f9f4;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .schedule-table th, .schedule-table td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .testimonial {
+      background: #fdfdfd;
+      padding: 20px;
+      border-left: 4px solid #acc29e;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #6e8f64;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #5b7852;
+    }
+
+    footer {
+      background: #e6efe5;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Find Your Inner Peace at Arina Yoga Studio</h1>
+  </header>
+
+  <section class="features">
+    <h2>Why Practice With Us?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        🧘‍♀️ <strong>Certified Instructors</strong><br/>
+        Experienced teachers with personalized attention.
+      </div>
+      <div class="feature">
+        🌿 <strong>Peaceful Studio</strong><br/>
+        A calming, nature-inspired space for your practice.
+      </div>
+      <div class="feature">
+        📱 <strong>Online & Offline Classes</strong><br/>
+        Join in person or from home.
+      </div>
+      <div class="feature">
+        💳 <strong>Flexible Pricing</strong><br/>
+        Pay-per-class or memberships available.
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <h2>Weekly Schedule</h2>
+    <table class="schedule-table">
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>Monday</td><td>9:00 - 10:00</td><td>Morning Flow</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td><td>18:00 - 19:00</td><td>Vinyasa Yoga</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td><td>17:00 - 18:00</td><td>Yin Yoga</td>
+      </tr>
+      <tr>
+        <td>Thursday</td><td>7:30 - 8:30</td><td>Sunrise Practice</td>
+      </tr>
+      <tr>
+        <td>Saturday</td><td>10:00 - 11:30</td><td>Weekend Flow</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">“Arina’s classes helped me not only improve flexibility but also reduce stress. The studio vibe is amazing!” — Marta</div>
+    <div class="testimonial">“Best decision I made this year! Great instructors and very welcoming atmosphere.” — Jakub</div>
+  </section>
+
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <form>
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea rows="4" placeholder="Your message or booking inquiry"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Arina Yoga Studio • Brno, Czech Republic
+  </footer>
+</body>
+</html>
